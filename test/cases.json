@@ -1,0 +1,41 @@
+{
+ "tests": [
+  {
+   "in": {
+    "cams": "Dış;16;4MP;6\nİç;24;2560x1440;3\nPTZ;4;8MP;8",
+    "maxch": 64,
+    "maxbw": 320,
+    "dec": 32,
+    "live": 25
+   },
+   "v": {
+    "channels": 44,
+    "mbps": 200,
+    "eq1080": 88.96,
+    "ok": true
+   }
+  },
+  {
+   "in": {
+    "cams": "Otopark;8;3840x2160;12",
+    "maxch": 8,
+    "maxbw": 80,
+    "dec": 8,
+    "live": 100
+   },
+   "v": {
+    "channels": 8,
+    "mbps": 96,
+    "ok": false
+   }
+  },
+  {
+   "in": {
+    "cams": "A;4;?;6",
+    "maxch": 8,
+    "maxbw": 80
+   },
+   "err": "cams"
+  }
+ ]
+}
